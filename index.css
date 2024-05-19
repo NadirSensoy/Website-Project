@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+   text-decoration: none;
+}
+
+#indexmain{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/ufo-1265186.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.main-content {
+    margin-bottom: 100px;
+    color: whitesmoke;
+    text-align: center;
+}
+.main-content h2 {
+    font-size: 4vmin;
+}
+.line{
+    width: 150px;
+    height: 7px;
+    background: rgb(0, 255, 183);
+    margin: 5px auto;
+    border-radius: 5px;
+}
+.main-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.nav-link{
+    display: inline-block;
+    padding-bottom:0.25rem;
+    position: relative; 
+    
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color:aqua ;
+    transition:width 0.5s ease-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+.navbar-brand{
+    display: inline-block;
+    padding-bottom:0.25rem;
+    position: relative; 
+}
+.navbar-brand::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color:aqua ;
+    transition:width 0.5s ease-out;
+}
+.navbar-brand:hover::before{
+    width: 100%;
+}
+.ctn{
+    padding: 8px 15px;
+    background:aqua;
+    border-radius: 31px;
+    color: rgb(0, 0, 68);
+    text-decoration: none;
+}

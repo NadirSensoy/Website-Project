@@ -1,0 +1,55 @@
+.nav-link{
+    display: inline-block;
+    padding-bottom:0.25rem;
+    position: relative; 
+    
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color:aqua ;
+    transition:width 0.5s ease-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+.navbar-brand{
+    display: inline-block;
+    padding-bottom:0.25rem;
+    position: relative; 
+}
+.navbar-brand::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color:aqua ;
+    transition:width 0.5s ease-out;
+}
+.navbar-brand:hover::before{
+    width: 100%;
+}
+
+#formelemanları{
+    margin-left: 9%;
+    margin-top: 40px;
+    margin-right: 7%;
+    margin-bottom: 7%;
+}
+#butonlar{
+    margin-top: 25px;
+    margin-left: 15%;
+    
+}
+#temizle{
+    margin-left: 25px;
+}
+#yorum{
+    max-width: 800px;
+}

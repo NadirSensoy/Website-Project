@@ -1,0 +1,392 @@
+.nav-link{
+    display: inline-block;
+    padding-bottom:0.25rem;
+    position: relative; 
+    
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color:aqua ;
+    transition:width 0.5s ease-out;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+.navbar-brand{
+    display: inline-block;
+    padding-bottom:0.25rem;
+    position: relative; 
+}
+.navbar-brand::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color:aqua ;
+    transition:width 0.5s ease-out;
+}
+.navbar-brand:hover::before{
+    width: 100%;
+}
+
+
+#resim{
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom:50px;
+    margin-right: 95%;
+    max-width: 300px;
+    max-height: 300px;
+    min-height: 300px;
+}
+.about-text{
+    margin-left: 17px;
+}
+.line{
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    width: 98%;
+    
+}
+
+#tablo{
+   margin-top: 25px;
+  
+}
+header{
+    background-color: antiquewhite;
+    min-height: 470px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+}
+label{
+    
+   font-size:20px;
+    background-color: rgb(240, 2, 93);
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 5px 7px;
+}
+#span{
+    font-size: 20px;
+    margin-left: 10px;
+    background-color: rgb(99, 0, 248);
+    border-radius: 10px;
+    color: whitesmoke;
+    padding: 5px 7px;
+}
+
+#section{
+    
+    width: 100vw;
+    height: 170vh;
+    background-color: rgb(196, 211, 223);
+}
+
+
+.right-bar {
+	flex: 25%;
+	margin-left: 20px;
+    margin-right: 30px;
+	padding: 20px;
+	height: 300px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.right-bar hr {
+	margin-bottom: 25px;
+}
+.right-bar p {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+.right-bar a {
+	background-color: #76bfb6;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-weight: 900;
+}
+.right-bar i {
+	margin-right: 15px;
+}
+.right-bar a:hover {
+	background-color: #3972a7;
+}
+
+@media screen and (max-width: 1000px) {
+    header{
+        height: 102vh;
+    }
+	#section{
+        margin-top: 0px;
+    }
+	.right-bar {
+     
+		margin-left: 15px;
+		margin-bottom: 20px;
+	}
+}
+#text{
+    margin-top: 15px;
+}
+
+#bilgisayar-yeteneklerim{
+    background-color: rgba(233, 71, 71, 0.865);
+    color:white;
+    margin-top: 15px;
+    padding: 15px 15px;
+    font-size: 17px;
+    border-radius: 30px;
+    max-width: 350px;
+
+}
+footer{
+    margin-top: 3vh;
+    background-color: #7caef0;
+    width: 100%;
+    height: 50vh;
+    
+}
+
+.middle {
+    position: absolute;
+
+    transform: translateY(-50%);
+    width:100%;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.btn {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070 ;
+    color: #333;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn i {
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.btn:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #333;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+#sosyalbaşlık{
+    background-color: rgb(4, 229, 249);
+    color: white;
+    border-radius: 40px;
+    padding: 15px 15px;
+    max-width: 420px;
+}
+
+@keyframes aaa {
+    0%{
+        left: -110%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -30%;
+    }
+    100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+
+
+#yüzde40{
+    display: inline-block;
+    padding-bottom:0.80rem;
+    position: relative; 
+    margin-right: 50px;
+    
+}
+#yüzde40::before{
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    margin-right: 10px;
+    min-width: 40px;
+    max-width: 40%;
+    width: 40%;
+    height: 8px;
+    background-color:rgb(4, 141, 141) ;
+    
+}
+#yüzde75{
+    display: inline-block;
+    padding-bottom:0.80rem;
+    position: relative; 
+    margin-right: 50px;
+    
+}
+#yüzde75::before{
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    margin-right: 10px;
+    min-width: 75px;
+    max-width: 100px;
+    width: 75%;
+    height: 8px;
+    background-color:rgb(4, 141, 141) ;
+    
+}
+#yüzde67{
+    display: inline-block;
+    padding-bottom:0.80rem;
+    position: relative; 
+    margin-right: 50px;
+    
+}
+#yüzde67::before{
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    margin-right: 10px;
+    min-width: 67px;
+    max-width: 100px;
+    width: 67%;
+    height: 8px;
+    background-color:rgb(4, 141, 141) ;
+    
+}
+#yüzde87{
+    display: inline-block;
+    padding-bottom:0.80rem;
+    position: relative; 
+    margin-right: 50px;
+    
+}
+#yüzde87::before{
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    margin-right: 10px;
+    min-width: 87px;
+    max-width: 100px;
+    width: 87%;
+    height: 8px;
+    background-color:rgb(4, 141, 141) ;
+    
+}
+#yüzde75{
+    display: inline-block;
+    padding-bottom:0.80rem;
+    position: relative; 
+    margin-right: 50px;
+    
+}
+#yüzde75::before{
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    margin-right: 10px;
+    min-width: 75px;
+    max-width: 100px;
+    width: 75%;
+    height: 8px;
+    background-color:rgb(4, 141, 141) ;
+    
+}
+
+#yüzde95{
+    display: inline-block;
+    padding-bottom:0.80rem;
+    position: relative; 
+    margin-right: 50px;
+    
+}
+#yüzde95::before{
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    margin-right: 10px;
+    min-width: 95px;
+    max-width: 100px;
+    width: 95%;
+    height: 8px;
+    background-color:rgb(4, 141, 141) ;
+    
+}
+#yüzde10{
+    display: inline-block;
+    padding-bottom:0.80rem;
+    position: relative; 
+    margin-right: 50px;
+    
+}
+#yüzde10::before{
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    margin-right: 10px;
+    min-width: 10px;
+    max-width: 100px;
+    width: 10%;
+    height: 8px;
+    background-color:rgb(4, 141, 141) ;
+    
+}
+
+
+
+
+
